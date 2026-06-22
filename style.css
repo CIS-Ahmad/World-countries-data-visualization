@@ -84,15 +84,17 @@ main {
   flex-direction: row;
   justify-content: start;
   gap: 50px;
-  margin: 10px 40px;
+  margin: 20px 40px;
   width: 90%;
+}
+.MaxContant {
+  width: 20%;
+  height: 40px;
 }
 .reslttext {
   color: #0000009d;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: bolder;
-  width: 20%;
-  max-width: 100px;
   height: 40px;
   margin: 10px 0% 10px 40px;
   white-space: normal;

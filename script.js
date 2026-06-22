@@ -2961,11 +2961,13 @@ function Display(isLang = true) {
 		let LangArray = GetTopLang(10);
 		for (let index = 0; index < 10; index++) {
 			CreateElement("div", `displayRow`, `displayRow-${index + 1}`, null, "MainSec")
-			CreateElement("p", "reslttext", null, LangArray[index].name, `displayRow-${index + 1}`);
+			CreateElement("div", `MaxContant`, `fMaxContant-${index + 1}`, null, `displayRow-${index + 1}`);
+			CreateElement("p", "reslttext", null, LangArray[index].name, `fMaxContant-${index + 1}`);
 			CreateElement("div", "prograssbar", `prograssbar-${index + 1}`, null, `displayRow-${index + 1}`);
 			let bar = CreateElement("p", "bar", null, '', `prograssbar-${index + 1}`);
 			bar.style.width = `${LangArray[index].total}%`;
-			CreateElement("p", "reslttext", null, LangArray[index].total, `displayRow-${index + 1}`);
+			CreateElement("div", `MaxContant`, `sMaxContant-${index + 1}`, null, `displayRow-${index + 1}`);
+			CreateElement("p", "reslttext", null, LangArray[index].total, `sMaxContant-${index + 1}`);
 		}
 
 	}
@@ -2981,12 +2983,13 @@ function Display(isLang = true) {
 		populArray.push(...GetTopNCountryFromPopulation(9));
 		for (let index = 0; index < 10; index++) {
 			CreateElement("div", `displayRow`, `displayRow-${index + 1}`, null, "MainSec")
-
-			CreateElement("p", "reslttext", null, populArray[index].name, `displayRow-${index + 1}`);
+			CreateElement("div", `MaxContant`, `fMaxContant-${index + 1}`, null, `displayRow-${index + 1}`);
+			CreateElement("p", "reslttext", null, populArray[index].name, `fMaxContant-${index + 1}`);
 			CreateElement("div", "prograssbar", `prograssbar-${index + 1}`, null, `displayRow-${index + 1}`);
 			let bar = CreateElement("p", "bar", null, '', `prograssbar-${index + 1}`);
 			bar.style.width = `${populArray[index].population / NumbeofPe * 100}%`;
-			CreateElement("p", "reslttext", null, populArray[index].population, `displayRow-${index + 1}`);
+			CreateElement("div", `MaxContant`, `sMaxContant-${index + 1}`, null, `displayRow-${index + 1}`);
+			CreateElement("p", "reslttext", null, populArray[index].population, `sMaxContant-${index + 1}`);
 		}
 	}
 }
