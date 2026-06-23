@@ -1,4 +1,4 @@
-import { countriesData } from "data.js"
+import { countriesData } from "./data.js"
 
 
 function GetTotlatPeople() {
